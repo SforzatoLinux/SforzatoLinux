@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- The line below is required in order to use the multibuild OBS features -->
+<!-- OBS-Profiles: @BUILD_FLAVOR@ -->
+<!-- OBS-ExclusiveArch: x86_64 -->
+
+<image schemaversion="7.5" name="kiwi-test-gui-03">
+    <description type="system">
+        <author>aaruelu</author>
+        <contact></contact>
+        <specification>tesu gui 03 live GNOME</specification>
+    </description>
+    <preferences>
+        <version>0.0.2</version>
+        <packagemanager>zypper</packagemanager>
+        <locale>ja_JP</locale>
+        <keytable>jp106</keytable>
+        <timezone>Asia/Tokyo</timezone>
+        <rpm-excludedocs>true</rpm-excludedocs>
+        <rpm-check-signatures>false</rpm-check-signatures>
+        <bootsplash-theme>breeze</bootsplash-theme>
+        <bootloader-theme>openSUSE</bootloader-theme>
+        <type image="iso" flags="overlay" firmware="efi" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true">
+            <bootloader name="grub2"  timeout="10"/>
+        </type>
+    </preferences>
+    <users>
+        <user password="test" home="/home/test" name="test" groups="users,sudo" pwdformat="plain" />
+        <user password="root" home="/root" name="root" groups="root" pwdformat="plain"/>
+    </users>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/oss/"/>
+    </repository>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/non-oss/"/>
+    </repository>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/oss/"/>
+    </repository>
+
+    <packages type="image">
+        <package name="bind-utils"/>
+        <package name="patterns-openSUSE-base"/>
+        <package name="systemd"/>
+        <package name="plymouth-theme-breeze"/>
+        <package name="plymouth-plugin-script"/>
+        <package name="grub2-branding-openSUSE"/>
+        <package name="iputils"/>
+        <package name="vim"/>
+        <package name="grub2"/>
+        <package name="grub2-x86_64-efi" arch="x86_64"/>
+        <package name="grub2-i386-pc"/>
+        <package name="syslinux"/>
+        <package name="lvm2"/>
+        <package name="plymouth"/>
+        <package name="fontconfig"/>
+        <package name="fonts-config"/>
+        <package name="tar"/>
+        <package name="parted"/>
+        <package name="openssh"/>
+        <package name="iproute2"/>
+        <package name="less"/>
+        <package name="bash-completion"/>
+        <package name="dhcp-client"/>
+        <package name="which"/>
+        <package name="kernel-default"/>
+        <package name="shim"/>
+        <package name="timezone"/>
+        <package name="dracut-kiwi-live"/>
+        <package name="sudo"/>
+        <package name="git"/>
+        <package name="NetworkManager"/>
+        <package name="x11-japanese-bitmap-fonts"/>
+        <package name="patterns-fonts-fonts"/>
+        <package name="patterns-fonts-fonts_opt"/>
+        <package name="liberation-fonts"/>
+        <package name="intlfonts-euro-bitmap-fonts"/>
+        <package name="google-roboto-fonts"/>
+        <package name="ghostscript-fonts-std"/>
+        <package name="dejavu-fonts"/>
+        <package name="patterns-fonts-fonts"/>
+        <package name="fonts-config"/>
+        <package name="google-noto-coloremoji-fonts"/>
+        <package name="google-noto-sans-jp-bold-fonts"/>
+        <package name="google-noto-sans-jp-fonts"/>
+        <package name="google-noto-sans-jp-regular-fonts"/>
+        <package name="google-noto-serif-jp-bold-fonts"/>
+        <package name="google-noto-serif-jp-fonts"/>
+        <package name="google-noto-serif-jp-regular-fonts"/>
+        <package name="noto-sans-fonts"/>
+        <package name="MozillaFirefox"/>
+        <package name="lightdm"/>
+        <package name="lightdm-gtk-greeter"/>
+
+	<package name="zenity"/>
+	<package name="calamares"/>
+
+	<package name="ibus-mozc"/>
+	<package name="ibus-gtk"/>
+	<package name="ibus-gtk3"/>
+	<package name="ibus-lang"/>
+	<package name="ibus-m17n"/>
+
+	<package name="gnome-extensions"/>
+
+	<package name="patterns-gnome-gnome"/>
+	<package name="patterns-gnome-gnome_x11"/>
+	<package name="gnome-session-wayland"/>
+	<package name="gsettings-backend-dconf"/>
+	<package name="patterns-base-basesystem"/>
+	<package name="patterns-base-x11"/>
+	<package name="patterns-gnome-gnome_basic"/>
+	<package name="patterns-gnome-gnome_basis"/>
+	<package name="evince"/>
+	<package name="file-roller"/>
+	<package name="gnome-calculator"/>
+	<package name="gnome-software"/>
+	<package name="gnome-system-monitor"/>
+	<package name="gnome-text-editor"/>
+	<package name="gnome-tweaks"/>
+	<package name="nautilus-extension-terminal"/>
+	<package name="nautilus-share"/>
+	<package name="pinentry-gnome3"/>
+	<package name="gnome-shell"/>
+	<package name="gnome-shell-calendar"/>
+	<package name="gnome-shell-classic"/>
+	<package name="gnome-shell-extension-desktop-icons"/>
+	<package name="gnome-shell-extensions-common"/>
+	<package name="gnome-shell-extensions-common-lang"/>
+	<package name="gnome-shell-lang"/>
+	<package name="gnome-shell-search-provider-bijiben"/>
+	<package name="gnome-shell-search-provider-contacts"/>
+	<package name="gnome-shell-search-provider-gnome-calculator"/>
+	<package name="gnome-shell-search-provider-gnome-characters"/>
+	<package name="gnome-shell-search-provider-gnome-clocks"/>
+	<package name="gnome-shell-search-provider-gnome-photos"/>
+	<package name="gnome-shell-search-provider-gnome-terminal"/>
+	<package name="gnome-shell-search-provider-gnome-weather"/>
+	<package name="gnome-shell-search-provider-nautilus"/>
+	<package name="gnome-shell-search-provider-seahorse"/>
+	<package name="libyui-ncurses-pkg16"/>
+	<package name="patterns-yast-yast2_basis"/>
+	<package name="yast2"/>
+	<package name="yast2-alternatives"/>
+	<package name="yast2-firewall"/>
+	<package name="yast2-packager"/>
+	<package name="yast2-theme"/>
+	<package name="yast2-metapackage-handler"/>
+	<package name="yast2-vm"/>
+	<package name="patterns-yast-x11_yast"/>
+	<package name="libyui-qt-pkg16"/>
+	<package name="yast2-control-center-qt"/>
+	<package name="patterns-yast-yast2_desktop"/>
+	<package name="yast2-country"/>
+	<package name="yast2-installation"/>
+	<package name="yast2-services-manager"/>
+	<package name="yast2-sysconfig"/>
+	<package name="yast2-users"/>
+	<package name="yast2-journal"/>
+	<package name="yast2-printer"/>
+	<package name="yast2-scanner"/>
+
+    </packages>
+    <packages type="bootstrap">
+        <package name="gawk"/>
+        <package name="grep"/>
+        <package name="gzip"/>
+        <package name="udev"/>
+        <package name="xz"/>
+        <package name="filesystem"/>
+        <package name="glibc-locale"/>
+        <package name="cracklib-dict-full"/>
+        <package name="ca-certificates"/>
+        <package name="ca-certificates-mozilla"/>
+        <package name="openSUSE-release"/>
+    </packages>
+
+</image>
