@@ -18,6 +18,6 @@ git clone https://github.com/SforzatoLinux/iso-maker/
 
 ## ビルド方法
 ```
-sudo kiwi-ng system build --description mykiwi/test-gui-04 --target-dir iso-test-04
+sudo kiwi-ng system build --description iso-maker/test-gui-04 --target-dir iso-test-04
 ```
 ディレクトリ名は、ビルドしたいkiwiファイルの入っている名称に変更して下さい。
