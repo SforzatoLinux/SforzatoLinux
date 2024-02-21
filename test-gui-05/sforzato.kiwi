@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Sforzato Linux: x86_64 -->
+
+<image schemaversion="7.5" name="Sforzato-Linux-test">
+    <description type="system">
+        <author>aruelu</author>
+        <contact></contact>
+        <specification>Sforzato Linux test</specification>
+    </description>
+    <preferences>
+        <version>0.0.2</version>
+        <packagemanager>zypper</packagemanager>
+        <locale>ja_JP</locale>
+        <keytable>jp106</keytable>
+        <timezone>Asia/Tokyo</timezone>
+        <rpm-excludedocs>true</rpm-excludedocs>
+        <rpm-check-signatures>false</rpm-check-signatures>
+        <bootsplash-theme>breeze</bootsplash-theme>
+        <bootloader-theme>openSUSE</bootloader-theme>
+        <type image="iso" flags="overlay" firmware="efi" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true">
+            <bootloader name="grub2"  timeout="10"/>
+        </type>
+    </preferences>
+    <users>
+        <user password="live" home="/home/sforzato" name="sforzato" groups="users,sudo" pwdformat="plain" />
+        <user password="$1$xyz$p8IPA3A3qC4kCQ0eNPnRs1" home="/root" name="root" groups="root" />
+    </users>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/oss/"/>
+    </repository>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/non-oss/"/>
+    </repository>
+    <repository type="rpm-md">
+        <source path="http://download.opensuse.org/tumbleweed/repo/oss/"/>
+    </repository>
+
+    <packages type="image">
+        <package name="dracut-kiwi-live"/>
+
+        <package name="systemd"/>
+        <package name="vim"/>
+        <package name="grub2"/>
+        <package name="grub2-x86_64-efi" arch="x86_64"/>
+        <package name="grub2-i386-pc"/>
+        <package name="syslinux"/>
+        <package name="fontconfig"/>
+        <package name="fonts-config"/>
+        <package name="tar"/>
+        <package name="openssh"/>
+        <package name="dhcp-client"/>
+        <package name="kernel-default"/>
+        <package name="timezone"/>
+        <package name="sudo"/>
+        <package name="git"/>
+        <package name="NetworkManager"/>
+        <package name="patterns-fonts-fonts"/>
+        <package name="patterns-fonts-fonts_opt"/>
+        <package name="fonts-config"/>
+        <package name="noto-sans-fonts"/>
+
+        <package name="bash"/>
+        <package name="coreutils"/>
+
+
+        <package name="lightdm"/>
+        <package name="lightdm-gtk-greeter"/>
+        <package name="zenity"/>
+        <package name="calamares"/>
+
+        <package name="ibus-mozc"/>
+        <package name="ibus-gtk"/>
+        <package name="ibus-gtk3"/>
+        <package name="ibus-lang"/>
+
+        <package name="gnome-extensions"/>
+
+        <package name="patterns-gnome-gnome"/>
+        <package name="gnome-shell"/>
+
+        <package name="flatpak"/>
+        <package name="noto-sans-cjk-fonts"/>
+        <package name="noto-sans-jp-fonts"/>
+        <package name="noto-sans-jp-regular-fonts"/>
+        <package name="noto-sans-tc-fonts"/>
+        <package name="noto-sans-tc-regular-fonts"/>
+        <package name="noto-serif-jp-regular-fonts"/>
+        <package name="zypper"/>
+
+        <package name="yast2"/>
+
+    </packages>
+    <packages type="bootstrap">
+        <package name="gawk"/>
+        <package name="grep"/>
+        <package name="gzip"/>
+        <package name="udev"/>
+        <package name="xz"/>
+        <package name="filesystem"/>
+        <package name="glibc-locale"/>
+        <package name="cracklib-dict-full"/>
+        <package name="ca-certificates"/>
+        <package name="ca-certificates-mozilla"/>
+        <package name="openSUSE-release"/>
+    </packages>
+
+</image>
