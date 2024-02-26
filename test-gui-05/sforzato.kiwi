@@ -88,8 +88,8 @@
         <package name="google-noto-serif-jp-regular-fonts"/>
 -->
         <package name="noto-sans-fonts"/>
-        <package name="MozillaFirefox"/>
 <!--
+        <package name="MozillaFirefox"/>
         <package name="lightdm"/>
         <package name="lightdm-gtk-greeter"/>
 -->
