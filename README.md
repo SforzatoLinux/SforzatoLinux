@@ -24,7 +24,7 @@ sudo kiwi-ng system build --description iso-maker/test-gui-04 --target-dir iso-t
 
 ## Mekefileを用いたビルド方法
 ```
-cd test-gui-04
+cd test-gui-04/
 make
 ```
 (注)test-gui-04でしか使えません!
