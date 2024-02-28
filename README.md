@@ -21,3 +21,10 @@ git clone https://github.com/SforzatoLinux/iso-maker/
 sudo kiwi-ng system build --description iso-maker/test-gui-04 --target-dir iso-test-04
 ```
 ディレクトリ名は、ビルドしたいkiwiファイルの入っている名称に変更して下さい。
+
+## Mekefileを用いたビルド方法
+```
+cd test-gui-04
+make
+```
+(注)test-gui-04でしか使えません!
