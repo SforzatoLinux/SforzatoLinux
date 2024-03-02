@@ -51,3 +51,8 @@ gnome-extensions enable arc-menu@arc-menu.com
 #--------------------------------------
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.mozilla.firefox
+
+#======================================
+# PackageKit(ライブ環境のみ)の無効化
+#--------------------------------------
+baseRemoveService packagekitd
