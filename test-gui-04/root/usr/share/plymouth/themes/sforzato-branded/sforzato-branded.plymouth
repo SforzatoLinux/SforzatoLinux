@@ -1,0 +1,8 @@
+[Plymouth Theme]
+Name=sforzato-branded
+Description=sforzato-branded
+ModuleName=script
+
+[script]
+ImageDir=/usr/share/plymouth/themes/sforzato-branded
+ScriptFile=/usr/share/plymouth/themes/sforzato-branded/sforzato-branded.script

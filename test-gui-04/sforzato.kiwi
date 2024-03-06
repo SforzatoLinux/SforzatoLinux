@@ -16,7 +16,7 @@
         <timezone>Asia/Tokyo</timezone>
         <rpm-excludedocs>true</rpm-excludedocs>
         <rpm-check-signatures>false</rpm-check-signatures>
-        <bootsplash-theme>breeze</bootsplash-theme>
+        <bootsplash-theme>sforzato-branded</bootsplash-theme>
         <bootloader-theme>openSUSE</bootloader-theme>
         <type image="iso" flags="overlay" firmware="efi" hybridpersistent_filesystem="ext4" hybridpersistent="true" mediacheck="true">
             <bootloader name="grub2"  timeout="10"/>
