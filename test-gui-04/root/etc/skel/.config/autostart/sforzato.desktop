@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=setup sfor
+Path=/usr/share/sforzato
+Exec=setup_sforzato.sh
+Icon=
+Terminal=false
