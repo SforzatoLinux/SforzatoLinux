@@ -40,13 +40,6 @@ suseInsertService NetworkManager
 baseSetRunlevel 5
 
 #======================================
-# ArcMenu(GNOME拡張機能)のインストール
-#--------------------------------------
-cd /usr/share/gnome-shell/extensions/
-gnome-extensions install arc-menu@arc-menu.com
-gnome-extensions enable arc-menu@arc-menu.com
-
-#======================================
 # Firefox(Flatpakから)のインストール
 #--------------------------------------
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
