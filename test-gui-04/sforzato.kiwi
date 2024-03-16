@@ -297,10 +297,14 @@
         <package name="nfs-client"/>
         <package name="noto-sans-cjk-fonts"/>
         <package name="noto-sans-jp-fonts"/>
+<!--
         <package name="noto-sans-jp-regular-fonts"/>
+-->
         <package name="noto-sans-tc-fonts"/>
+<!--
         <package name="noto-sans-tc-regular-fonts"/>
         <package name="noto-serif-jp-regular-fonts"/>
+-->
         <package name="nvme-cli"/>
         <package name="open-iscsi"/>
         <package name="pipewire"/>

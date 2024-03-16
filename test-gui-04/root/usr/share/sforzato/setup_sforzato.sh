@@ -25,7 +25,11 @@ then
 fi
 
 #アプリケーションメニューの有効化
-gsettings set org.gnome.shell enabled-extensions "['apps-menu@gnome-shell-extensions.gcampax.github.com']"
+#gsettings set org.gnome.shell enabled-extensions "['apps-menu@gnome-shell-extensions.gcampax.github.com']"
+
+#ArcMenuの有効化
+gsettings set org.gnome.shell enabled-extensions "['arcmenu@arcmenu.com']"
+
 
 #ウィンドウの縮小・拡大ボタンの表示
 gsettings set org.gnome.desktop.wm.preferences button-layout 'appmenu:minimize,maximize,close'
