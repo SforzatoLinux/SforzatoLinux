@@ -1,9 +1,9 @@
 NAME="SforzatoLinux"
-# VERSION="0.0.2"
+# VERSION="0.0.3"
 ID="opensuse-tumbleweed"
 ID_LIKE="opensuse suse"
-VERSION_ID="0.0.2"
-PRETTY_NAME="SforzatoLinux 0.0.2"
+VERSION_ID="0.0.3"
+PRETTY_NAME="SforzatoLinux 0.0.3"
 ANSI_COLOR="0;32"
 # CPE 2.3 format, boo#1217921
 CPE_NAME="cpe:2.3:o:opensuse:tumbleweed:20240329:*:*:*:*:*:*:*"
