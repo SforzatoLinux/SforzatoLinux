@@ -9,7 +9,7 @@
         <specification>Sforzato Linux test</specification>
     </description>
     <preferences>
-        <version>0.0.2</version>
+        <version>0.0.3</version>
         <packagemanager>zypper</packagemanager>
         <locale>ja_JP</locale>
         <keytable>jp106</keytable>
